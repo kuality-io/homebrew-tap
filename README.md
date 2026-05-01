@@ -24,6 +24,14 @@ export KUALITY_API_KEY=ku_...
 
 Or save it to `~/.kuality/config`.
 
+## macOS Gatekeeper
+
+On first run, macOS may block the binary with "kuality Not Opened" because it is not yet code-signed with an Apple Developer ID. Click **Done** (not "Move to Trash"), then remove the quarantine flag:
+
+```bash
+xattr -d com.apple.quarantine /opt/homebrew/Caskroom/kuality/0.1.0/kuality
+```
+
 ## Links
 
 - [kuality.io](https://kuality.io)
